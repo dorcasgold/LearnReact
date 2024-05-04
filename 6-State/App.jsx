@@ -24,7 +24,7 @@ function List() {
 }
 export default List
 
-** update object values in state **
+** update array values in state **
 import './List.css'
 import { useState } from "react"
 function List() {
@@ -52,7 +52,7 @@ function List() {
 }
 export default List
 
-** update array values in state **
+** update object values in state **
   import './List.css'
 import { useState } from "react"
 function List() {
