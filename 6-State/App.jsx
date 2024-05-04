@@ -24,7 +24,7 @@ function List() {
 }
 export default List
 
-// update array values in state
+** update object values in state **
 import './List.css'
 import { useState } from "react"
 function List() {
@@ -47,6 +47,27 @@ function List() {
       <button onClick={Add}>Add One</button>
       <button onClick={Remove}>Remove One</button>
       <button onClick={Update}>Update One</button>
+    </>
+  )
+}
+export default List
+
+** update array values in state **
+  import './List.css'
+import { useState } from "react"
+function List() {
+  const [movies, setMovies] = useState({
+    title: "naruto",
+    ratings: 5,
+  });
+  const handleClick = () => {
+    setMovies({ ...movies, ratings: 10.5 })
+  }
+  return (
+    <>
+      <h1>{movies.title}</h1>
+      <h1>ratings: {movies.ratings}</h1>
+      <button onClick={handleClick}>change rating</button>
     </>
   )
 }
