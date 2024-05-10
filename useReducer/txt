@@ -1,0 +1,1 @@
+The useReducer hook is another powerful hook in React that allows you to manage complex state logic in your functional components. It's particularly useful when you have state transitions that depend on the previous state, or when you have multiple actions that can update the state in different ways.
